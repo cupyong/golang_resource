@@ -1,11 +1,14 @@
 package main
 
+import "grpc/proto"
+
+//go get -u google.golang.org/grpc/cmd/protoc-gen-go-grpc
+//go install google.golang.org/grpc/cmd/protoc-gen-go-grpc
 //protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative proto/hello.proto
 import (
 	"context"
 	"fmt"
 	"google.golang.org/grpc"
-	"grpc/proto"
 	"net"
 )
 
